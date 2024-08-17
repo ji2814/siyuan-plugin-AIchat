@@ -1,31 +1,22 @@
 {
-  "name": "plugin-sample-vite",
-  "author": "frostime",
-  "url": "https://github.com/frostime/plugin-sample-vite",
-  "version": "0.3.5",
+  "name": "plugin-AIchat",
+  "author": "away",
+  "url": "https://github.com/ji2814/siyuan-plugin-AIchat",
+  "version": "0.0.1",
   "minAppVersion": "3.0.12",
   "backends": [
-    "windows",
-    "linux",
-    "darwin",
-    "docker",
-    "ios",
-    "android"
+    "windows"
   ],
   "frontends": [
-    "desktop",
-    "mobile",
-    "browser-desktop",
-    "browser-mobile",
     "desktop-window"
   ],
   "displayName": {
-    "en_US": "Plugin sample with vite",
-    "zh_CN": "插件样例 vite 版"
+    "en_US": "AIchat",
+    "zh_CN": "AIchat插件"
   },
   "description": {
-    "en_US": "SiYuan plugin sample with vite",
-    "zh_CN": "使用 vite 开发的思源插件样例"
+    "en_US": "add AI chat to siyuan",
+    "zh_CN": "为思源笔记开发的AI聊天插件"
   },
   "readme": {
     "en_US": "README.md",
@@ -37,6 +28,6 @@
     ]
   },
   "keywords": [
-    "plugin", "sample", "插件样例"
+    "plugin", "AI", "AIchat"
   ]
 }
