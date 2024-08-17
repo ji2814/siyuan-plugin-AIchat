@@ -8,6 +8,14 @@ import fg from 'fast-glob';
 
 import vitePluginYamlI18n from './yaml-plugin';
 
+import vue from "@vitejs/plugin-vue";// vue
+
+// element-plus
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+
+
 const args = minimist(process.argv.slice(2))
 const isWatch = args.watch || args.w || false
 const devDistDir = "dev"
@@ -25,6 +33,16 @@ export default defineConfig({
 
     plugins: [
 
+        // element-plus auto import
+        AutoImport({
+            resolvers: [ElementPlusResolver()],
+        }),
+        Components({
+            resolvers: [ElementPlusResolver()],
+        }),
+
+        vue(),// vue
+        
         vitePluginYamlI18n({
             inDir: 'public/i18n',
             outDir: `${distDir}/i18n`
