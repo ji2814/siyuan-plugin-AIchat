@@ -60,8 +60,7 @@ const settingUtils = props.plugin.settingUtils;
 let apiKey = "";
 let baseUrl = "";
 let modelName = "";
-const prompt = "你是一个AIchat助手，擅长帮助人们解决各种问题。"
-    ;
+const prompt = "你是一个AIchat助手，擅长帮助人们解决各种问题。";
 const chatListDom = ref<HTMLDivElement>();
 const msgContent = ref('');
 let isTalking = ref(false);
@@ -79,7 +78,6 @@ const messageList = ref<ChatMessage[]>([
 
 const sendText = async () => {
     try {
-        // initMassageList();
         loadConfig();
         if (!msgContent.value) return;
         // if (messageList.value.length === 2) {
@@ -216,9 +214,7 @@ watch(messageList.value, () => nextTick(() => scrollToBottom()));
 
 .title-right {}
 
-.clear {
-    /* 可以根据需要添加样式 */
-}
+.clear {}
 
 .chat-header {
     display: flex;
